@@ -6,9 +6,10 @@ public class OutputFormatting {
 	System.out.println("=======================");
 	for(int i = 0; i < 3; i++) {
 		String s = sc.next();
-		s = s.substring(1,10);
+		s = s.substring(0,10);
 		int x = sc.nextInt();
-		System.out.printf("%-15s%03d\n", s, x);
+		if(x < 1000)
+			System.out.printf("%-15s%03d\n", s, x);
 	}
 	System.out.println("=======================");
 
